@@ -57,7 +57,7 @@ session to Muse. The rest depends on the hardware.
 | Touch | — | — | — | — | — | ✅ | ✅ | — | ✅ | ✅ | — | — | ✅ |
 | Battery status | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Voltage only | ✅ |
 | Over-the-air updates | Off | Off | Off | Off | Off | On | On | On | On | On | On | On | On |
-| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR | A (talk), B (menu), PWR |
+| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR | A (talk), B (sleep), PWR |
 
 Boards without PSRAM (the ideaspark and the Waveshare C6) don't have room for
 the home-network tunnel. Muse can still reach and control them once the
@@ -97,7 +97,8 @@ invalid`). `tools/muse/paced_esptool.py` takes esptool's arguments and sends 64
 bytes at a time at the line rate; `tools/muse/board.sh flash watcher` uses it.
 
 The M5Stack StopWatch uses Button A (GPIO2) to talk and confirm pairing,
-Button B (GPIO1) for the menu, and its CST820B touch screen for settings.
+Button B (GPIO1) to sleep/wake the screen, and its CST820B touch screen
+for settings (swipe left from the avatar).
 The red PWR key belongs to the M5PM1: single-click reset is disabled as in
 M5Stack's UserDemo; its hardware power/download shortcuts are not remapped.
 The menu's power-off command shuts down through M5PM1. Replies are text,
