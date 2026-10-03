@@ -156,7 +156,7 @@ attack. Set it up on a network you trust.
 
 ## Boards
 
-The last seven run the full on-screen UI: an animated avatar, push-to-talk and
+The last eight run the full on-screen UI: an animated avatar, push-to-talk and
 settings. Audio and image support vary by board, so check the feature table in
 [`devices/`](devices). The others show status on a light, a ring or a simple
 status screen.
@@ -174,6 +174,7 @@ status screen.
 | Waveshare ESP32-C6-Touch-AMOLED-1.8 | UI, push-to-talk with text replies | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | Seeed SenseCAP Watcher | UI, push-to-talk, settings, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 | M5Stack StickS3 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
+| M5Stack StopWatch | Round touch UI, push-to-talk, images, battery | `tools/muse/board.sh build stopwatch` |
 | M5Stack StickC Plus2 | UI, push-to-talk, two-button menu, images | see [`AGENTS.md`](AGENTS.md#boards-with-the-full-ui-by-hand) |
 
 See [`devices/`](devices) for each board's hardware, features, and where to

@@ -64,6 +64,7 @@ upstream licenses:
 |---|---|---|
 | [`esp32/components/minimp3/include/minimp3.h`](esp32/components/minimp3) | [lieff/minimp3](https://github.com/lieff/minimp3) | CC0-1.0, see [`LICENSE`](esp32/components/minimp3/LICENSE) |
 | [`esp32/main/pixel_font.c`](esp32/main/pixel_font.c) | Adafruit GFX `glcdfont.c` | BSD-2-Clause, in the file header |
+| [`esp32/components/muse/boards/cst820.cpp`](esp32/components/muse/boards/cst820.cpp), [`cst820.h`](esp32/components/muse/boards/cst820.h) | [M5Stack UserDemo V0.5](https://github.com/m5stack/M5StopWatch-UserDemo/tree/V0.5/main/hal/drivers/cst820) | MIT, see [`cst820.LICENSE`](esp32/components/muse/boards/cst820.LICENSE) |
 
 Dependencies fetched at build time are under their own licenses: ESP-IDF
 components (into `esp32/managed_components/`), and the simulator's LVGL and

@@ -40,23 +40,24 @@ session to Muse. The rest depends on the hardware.
 | **Waveshare ESP32-C6-Touch-AMOLED-1.8** | ESP32-C6 | 1.8" 368×448 AMOLED, touch | 16 MB / none | [Waveshare wiki](https://www.waveshare.com/wiki/ESP32-C6-Touch-AMOLED-1.8) | [Waveshare](https://www.waveshare.com/esp32-c6-touch-amoled-1.8.htm) |
 | **Seeed SenseCAP Watcher** | ESP32-S3 | 1.45" 412×412 round LCD, touch | 32 MB / 8 MB | [Seeed wiki](https://wiki.seeedstudio.com/watcher/), [GitHub](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware) | [Seeed Studio](https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html) |
 | **M5Stack StickS3** | ESP32-S3 | 1.14" 135×240 LCD | 8 MB / 8 MB | [M5Stack docs](https://docs.m5stack.com/en/core/StickS3), [M5Unified](https://github.com/m5stack/M5Unified) | [M5Stack](https://shop.m5stack.com/products/m5sticks3-esp32s3-mini-iot-dev-kit) |
+| **M5Stack StopWatch** | ESP32-S3 | 1.75" 466×466 round AMOLED, touch | 16 MB / 8 MB | [M5Stack docs](https://docs.m5stack.com/en/core/StopWatch), [UserDemo V0.5](https://github.com/m5stack/M5StopWatch-UserDemo/tree/V0.5) | — |
 | **M5Stack StickC Plus2** | ESP32 | 1.14" 135×240 LCD | 8 MB / 2 MB | [M5Stack docs](https://docs.m5stack.com/en/core/M5StickC%20PLUS2), [M5Unified](https://github.com/m5stack/M5Unified) | [M5Stack](https://shop.m5stack.com/products/m5stickc-plus2-esp32-mini-iot-development-kit) (end of life) |
 
 ## Features
 
-| | DevKitC-1 | ideaspark | SenseCAP Indicator | reTerminal E1001 | HA Voice PE | Waveshare S3 1.75C | Waveshare S3 1.75 | AIPI Lite | Waveshare C6 1.8 | Watcher | StickS3 | StickC Plus2 |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Home-network tunnel | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ |
-| Shows status on | Light | Screen | Screen | E-paper | Light ring | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar |
-| Images from Muse | — | ✅ | ✅ | Black and white | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ |
-| UI and settings | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Push-to-talk | — | — | — | — | ✅ | ✅ | ✅ | ✅ | Text replies | ✅ | ✅ | ✅ |
-| Speaker and mic | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Buzzer and mic |
-| Air sensors | — | — | D1S, D1Pro | — | — | — | — | — | — | — | — | — |
-| Touch | — | — | — | — | — | ✅ | ✅ | — | ✅ | ✅ | — | — |
-| Battery status | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Voltage only |
-| Over-the-air updates | Off | Off | Off | Off | Off | On | On | On | On | On | On | On |
-| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR |
+| | DevKitC-1 | ideaspark | SenseCAP Indicator | reTerminal E1001 | HA Voice PE | Waveshare S3 1.75C | Waveshare S3 1.75 | AIPI Lite | Waveshare C6 1.8 | Watcher | StickS3 | StickC Plus2 | StopWatch |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Home-network tunnel | ✅ | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ |
+| Shows status on | Light | Screen | Screen | E-paper | Light ring | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar | Avatar |
+| Images from Muse | — | ✅ | ✅ | Black and white | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | ✅ | ✅ |
+| UI and settings | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Push-to-talk | — | — | — | — | ✅ | ✅ | ✅ | ✅ | Text replies | ✅ | ✅ | ✅ | ✅ |
+| Speaker and mic | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Buzzer and mic | ✅ |
+| Air sensors | — | — | D1S, D1Pro | — | — | — | — | — | — | — | — | — | — |
+| Touch | — | — | — | — | — | ✅ | ✅ | — | ✅ | ✅ | — | — | ✅ |
+| Battery status | — | — | — | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | Voltage only | ✅ |
+| Over-the-air updates | Off | Off | Off | Off | Off | On | On | On | On | On | On | On | On |
+| Buttons | BOOT | BOOT | Top | Green | Centre (talk), dial | PWR (talk), BOOT | BOOT (talk), PWR | Two | BOOT (talk), PWR | Wheel (press to talk, turn to sleep) | Front (talk), side (menu), PWR | Front (talk), side (menu), PWR | A (talk), B (menu), PWR |
 
 Boards without PSRAM (the ideaspark and the Waveshare C6) don't have room for
 the home-network tunnel. Muse can still reach and control them once the
@@ -94,6 +95,31 @@ arrives at once, so plain esptool can't upload its stub or write flash
 (`0107: Checksum error`, `0105: The format of the received message is
 invalid`). `tools/muse/paced_esptool.py` takes esptool's arguments and sends 64
 bytes at a time at the line rate; `tools/muse/board.sh flash watcher` uses it.
+
+The M5Stack StopWatch uses Button A (GPIO2) to talk and confirm pairing,
+Button B (GPIO1) for the menu, and its CST820B touch screen for settings.
+The red PWR key belongs to the M5PM1: single-click reset is disabled as in
+M5Stack's UserDemo; its hardware power/download shortcuts are not remapped.
+The menu's power-off command shuts down through M5PM1. Replies are text,
+like the other full-UI boards; the speaker is available for the SDK's local
+audio self-test. IMU, RTC and vibration are not exposed as Muse tools.
+
+Power and I/O use the unmodified managed [M5IOE1](https://github.com/m5stack/M5IOE1)
+and [M5PM1](https://github.com/m5stack/M5PM1) libraries. The display uses
+Espressif's CO5300 driver with the StopWatch panel sequence and x=6 gap from
+[M5Stack UserDemo V0.5](https://github.com/m5stack/M5StopWatch-UserDemo/tree/V0.5/main/hal).
+The CST820 touch driver is taken from that same MIT-licensed demo; its
+copyright and license are retained beside the source. Pins and codec wiring
+were also checked against [xiaozhi-esp32's StopWatch board](https://github.com/78/xiaozhi-esp32/tree/0d576d3d4c049c6f55eaf879725dc23e516511b4/main/boards/m5stack/stopwatch).
+Native USB Serial/JTAG is `303a:1001`; use the device's MAC serial when other
+Espressif boards are attached. Back up all 16 MB before replacing existing
+firmware, and keep backups private because they include Wi-Fi/account data:
+
+```sh
+python -m esptool --chip esp32s3 -p PORT read-flash 0 0x1000000 stopwatch-backup.bin
+tools/muse/board.sh build stopwatch
+tools/muse/board.sh flash stopwatch PORT
+```
 
 The M5Stack StickS3 has 8 MB of flash, so it uses its own partition table with
 two smaller app slots. The front button is push-to-talk and the side button
@@ -181,6 +207,7 @@ board's overlays, in order:
 | Waveshare C6 1.8 | `esp32c6` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-waveshare-c6-18`](sdkconfig.muse-waveshare-c6-18) | by hand |
 | SenseCAP Watcher | `esp32s3` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-sensecap-watcher`](sdkconfig.muse-sensecap-watcher) | by hand |
 | M5Stack StickS3 | `esp32s3` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-sticks3`](sdkconfig.muse-m5stack-sticks3) | by hand |
+| M5Stack StopWatch | `esp32s3` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-stopwatch`](sdkconfig.muse-m5stack-stopwatch) | `tools/muse/board.sh build stopwatch` |
 | M5Stack StickC Plus2 | `esp32` | [`devices/sdkconfig.muse`](sdkconfig.muse), [`devices/sdkconfig.muse-m5stack-stickc-plus2`](sdkconfig.muse-m5stack-stickc-plus2) | by hand |
 
 `tools/board.sh BOARD [build|flash|monitor|flash-monitor] [PORT]` builds each
