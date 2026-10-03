@@ -97,12 +97,15 @@ invalid`). `tools/muse/paced_esptool.py` takes esptool's arguments and sends 64
 bytes at a time at the line rate; `tools/muse/board.sh flash watcher` uses it.
 
 The M5Stack StopWatch uses Button A (GPIO2) to talk and confirm pairing,
-Button B (GPIO1) to sleep/wake the screen, and its CST820B touch screen
-for settings (swipe left from the avatar).
+and its CST820B touch screen for settings (swipe left from the avatar).
+Button B (GPIO1) follows the shared touch-board input behavior: a short press
+sleeps/wakes the screen, a double press toggles the BLE phone setup window,
+and a 1.5-second hold while awake requests power-off. On battery, once the
+display is paused and the touch controller sleeps, only the buttons wake it.
 The red PWR key belongs to the M5PM1: single-click reset is disabled as in
 M5Stack's UserDemo; its hardware power/download shortcuts are not remapped.
-The menu's power-off command shuts down through M5PM1. Replies are text,
-like the other full-UI boards; the speaker is available for the SDK's local
+Both the menu and the B-button hold request shutdown through M5PM1.
+Replies are text, like the other full-UI boards; the speaker is available for the SDK's local
 audio self-test. IMU, RTC and vibration are not exposed as Muse tools.
 
 Power and I/O use the unmodified managed [M5IOE1](https://github.com/m5stack/M5IOE1)
